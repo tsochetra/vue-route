@@ -1,0 +1,33 @@
+
+<div class="progress">
+	<div class="progress-bar progress-bar-success" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-warning" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-danger" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-info" style="width: 25%"></div>
+</div>
+<div class="jumbotron" id="jumbotron">
+    <h1 class="text-center">Dashboard</h1>
+    <h3>tsochetra</h3>
+</div>
+<div class="progress">
+	<div class="progress-bar progress-bar-success" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-warning" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-danger" style="width: 25%"></div>
+	<div class="progress-bar progress-bar-info" style="width: 25%"></div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+        <div class="col-md-3" ng-repeat="x in data">
+            <button class="btn btn-lg" ng-class="{true: 'btn-primary', false: 'btn-default'}[x.on == true]" type="button" ng-click="switch($index + 1, x.on)"><i class="material-icons">wb_sunny</i><span ng-show="x.on"> ON</span><span ng-show="!x.on"> OFF</span></button>
+        </div>
+
+    </div>
+    <div class="progress">
+		<div class="progress-bar progress-bar-success" style="width: 25%"></div>
+		<div class="progress-bar progress-bar-warning" style="width: 25%"></div>
+		<div class="progress-bar progress-bar-danger" style="width: 25%"></div>
+		<div class="progress-bar progress-bar-info" style="width: 25%"></div>
+	</div>
+</div>
